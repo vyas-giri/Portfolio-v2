@@ -23,5 +23,10 @@ export default {
             type: "string",
             title: "Link",
         },
+        {
+            name: "github_link",
+            type: "string",
+            title: "Github Link",
+        },
     ],
 }

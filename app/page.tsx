@@ -4,12 +4,15 @@ import SocialLinks from './components/socialLinks';
 import Hero from './components/Hero';
 import BackgroundCircles from './components/BackgroundCircles';
 import MyInfo from './components/MyInfo';
+import Skills from './components/Skills';
 
 export default function Home() {
   
 
   return (
-    <div className='divide-y divide-gray-300 dark:divide-gray-700 h-screen snap-y snap-mandatory'>
+    <div className='snap-y snap-mandatory snap-center'>
+    <section id='about_me' className='mb-72 md:mb-32'>
+    <div className='divide-y divide-gray-300 dark:divide-gray-700 h-screen'>
       <div className='space-y-2 pt-5 pb-8 md:space-x-5'>
         <h1 className='text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-10'>
           Home
@@ -28,6 +31,18 @@ export default function Home() {
 
         <MyInfo />
       </div>
+    </div>
+    </section>
+    <section id='skills'>
+      <div className='divide-y divide-gray-300 dark:divide-gray-700'>
+      <div className='space-y-2 pt-5 pb-8 md:space-x-5'>
+        <h1 className='text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-5xl md:leading-10'>
+          Skills and tools I use
+        </h1>
+      </div>
+    <Skills />
+    </div>
+    </section>
     </div>
   )
 }
