@@ -21,7 +21,7 @@ function Hero({}: Props) {
       })
 
   return (
-    <div className='flex flex-col space-y-8 items-center justify-center text-center overflow-hidden'>
+    <div className='flex flex-col space-y-8 items-center justify-center text-center overflow-hidden -z-10'>
         <h3 className='pt-4 pb-2 text[24px] sm:text-2xl font-bold leading-8 tracking-tight text-[#F7AB0A]'>
             <span>{text}</span>
             <Cursor cursorColor="#F7AB0A" />

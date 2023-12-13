@@ -17,7 +17,7 @@ function Form({}: Props) {
     }} 
     ref={formRef} 
     style={{opacity: pending ? 0.7: 1}}
-    className='relative flex flex-col items-center text-sm mb-5 space-y-2'>
+    className='relative flex flex-col items-center text-sm mb-5 space-y-2 -z-10'>
         <input 
         type='text' 
         placeholder='Leave your message...' 

@@ -32,20 +32,20 @@ async function Projects({}: Props) {
   const data: Data[] = await getProjects();
 
   return (
-    <div className='divide-y divide-amber-600 dark:divide-gray-700 mb-10'>
+    <div className='divide-y divide-amber-600 dark:divide-gray-700 mb-10 -z-10'>
         <div className='space-y-2 pt-6 pb-8 md:space-y-5'>
             <h1 className='text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl'>
                 All Projects
             </h1>
         </div>
 
-        <div className='grid gap-y-8 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3 lg:gap-10 pt-8'>
+        <div className='grid gap-y-8 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3 lg:gap-10 pt-8 -z-10'>
           {data.map((project) => (
             <article 
             key={project._id}
-            className='overflow-hidden dark:border-zinc-600 rounded-lg shadow-lg dark:bg-black dark:shadow-gray-700 shadow-teal-100 border border-gray-700 bg-white'>
+            className='overflow-hidden dark:border-zinc-600 rounded-lg shadow-lg dark:bg-black dark:shadow-gray-700 shadow-teal-100 border border-gray-700 bg-white -z-10'>
               <div className='h-56 w-full relative'>
-              <Image alt='project-image' src={project.imageUrl} width={500} height={500} className='w-full h-full object-cover' />
+              <Image alt='project-image' src={project.imageUrl} width={500} height={500} className='w-full h-full object-cover -z-10' />
               </div>
 
               <div className='p-4 sm:p-6'>

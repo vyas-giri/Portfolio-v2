@@ -11,7 +11,7 @@ export default function Home() {
   
 
   return (
-    <div className='snap-y snap-mandatory snap-center scroll-smooth'>
+    <div className='snap-y snap-mandatory snap-center scroll-smooth -z-10'>
     <section id='about_me' className='pb-[102rem] sm:pb-[70rem] md:pb-[60rem] xl:pb-32 md:mb-32 h-screen'>
     <div className='divide-y divide-amber-600 dark:divide-gray-700'>
       <div className='space-y-2 pt-5 pb-8 md:space-x-5'>
@@ -24,7 +24,7 @@ export default function Home() {
         <div className='flex flex-col items-center pt-8 space-y-2'>
           {/* <BackgroundCircles /> */}
           <Image alt='me' className='h-48 w-48 rounded-full object-cover object-left-top' src={"/me.webp"} width={400} height={200} />
-          <section id='hero' className='snap-center'>
+          <section id='hero' className='snap-center -z-10'>
             <Hero />
           </section>
           <SocialLinks />

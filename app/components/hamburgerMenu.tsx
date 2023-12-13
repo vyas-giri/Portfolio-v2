@@ -85,7 +85,7 @@ const Hamburger = () => {
             initial='initial'
             animate='animate'
             exit='exit'
-            className='dark:text-white text-black bg-slate-400 fixed left-0 top-0 z-20 h-screen w-full origin-top dark:bg-[#191919] p-10'
+            className='dark:text-white text-black bg-slate-400 fixed left-0 top-0 z-50 h-screen w-full origin-top dark:bg-[#191919] p-10'
           >
             <div className='flex h-full flex-col'>
               <p className='cursor-pointer' onClick={toggleMenu}>

@@ -19,7 +19,7 @@ function SocialLinks({}: Props) {
             scale: 1,
           }}
           transition={{
-            duration: 0.5
+            duration: 1.5
           }}
           className='flex space-x-5 pt-3 pb-5'>
             <a href='https://github.com/vyas-giri' target='_blank'>
