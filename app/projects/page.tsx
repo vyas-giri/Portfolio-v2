@@ -39,13 +39,13 @@ async function Projects({}: Props) {
             </h1>
         </div>
 
-        <div className='grid gap-y-8 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3 lg:gap-10 pt-8 -z-10'>
+        <div className='grid gap-y-8 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3 lg:gap-10 pt-8'>
           {data.map((project) => (
             <article 
             key={project._id}
-            className='overflow-hidden dark:border-zinc-600 rounded-lg shadow-lg dark:bg-black dark:shadow-gray-700 shadow-teal-100 border border-gray-700 bg-white -z-10'>
+            className='overflow-hidden dark:border-zinc-600 rounded-lg shadow-lg dark:bg-black dark:shadow-gray-700 shadow-teal-100 border border-gray-700 bg-white'>
               <div className='h-56 w-full relative'>
-              <Image alt='project-image' src={project.imageUrl} width={500} height={500} className='w-full h-full object-cover -z-10' />
+              <Image alt='project-image' src={project.imageUrl} width={500} height={500} className='w-full h-full object-cover' />
               </div>
 
               <div className='p-4 sm:p-6'>

@@ -17,14 +17,14 @@ function Form({}: Props) {
     }} 
     ref={formRef} 
     style={{opacity: pending ? 0.7: 1}}
-    className='relative flex flex-col items-center text-sm mb-5 space-y-2 -z-10'>
+    className='relative flex flex-col items-center text-sm mb-5 space-y-2'>
         <input 
         type='text' 
         placeholder='Leave your message...' 
         name='entry' 
         required 
         disabled={pending}
-        className='pl-4 pr-32 py-2 mt-1 focus:ring-teal-500 focus:border-teal-500 block w-full border-neutral-400 rounded-md bg-gray-100 dark:bg-neutral-800 text-neutral-900 dark:text-neutral-100' />
+        className='pl-4 sm:pr-32 py-2 mt-1 focus:ring-teal-500 focus:border-teal-500 block w-full border-neutral-400 rounded-md bg-gray-100 dark:bg-neutral-800 text-neutral-900 dark:text-neutral-100' />
         <input 
         type='text'
         placeholder='Who&apos;s it from?'

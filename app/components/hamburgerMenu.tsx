@@ -74,7 +74,7 @@ const Hamburger = () => {
 
 
   return (
-    <header className='z-20'>
+    <header className='z-50'>
       <div className='text-md text-slate-700 dark:text-white cursor-pointer' onClick={toggleMenu}>
         <HamburgerIcon boxSize={28} />
       </div>
@@ -87,7 +87,7 @@ const Hamburger = () => {
             exit='exit'
             className='dark:text-white text-black bg-slate-400 fixed left-0 top-0 z-50 h-screen w-full origin-top dark:bg-[#191919] p-10'
           >
-            <div className='flex h-full flex-col'>
+            <div className='flex h-full flex-col z-50'>
               <p className='cursor-pointer' onClick={toggleMenu}>
                 <CloseIcon boxSize={28} />
               </p>
@@ -96,13 +96,13 @@ const Hamburger = () => {
                 initial='initial'
                 animate='open'
                 exit='initial'
-                className='flex h-full flex-col items-center justify-center gap-5 '
+                className='flex h-full flex-col items-center justify-center gap-5 z-50'
               >
                 <motion.div variants={mobileLinkVars}>
                 </motion.div>
                 {navLinks.map((link, index) => {
                   return (
-                    <div className='overflow-hidden' key={index}>
+                    <div className='overflow-hidden z-50' key={index}>
                       <button onClick={toggleMenu}>
                       <MobileNavLink
                         key={index}
