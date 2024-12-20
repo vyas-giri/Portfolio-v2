@@ -11,9 +11,14 @@ function Form({}: Props) {
   const {pending} = useFormStatus();
 
   return (
-    <form action={async (FormData) => {
-      await postEntry(FormData);
-      formRef.current?.reset();
+    <form action={async (FormData: FormData) => {
+      try {
+        await postEntry(FormData);
+        formRef.current?.reset();
+      } catch (error) {
+        console.error("Failed to post entry:", error);
+        alert("An error occurred while submitting your entry.");
+      }
     }} 
     ref={formRef} 
     style={{opacity: pending ? 0.7: 1}}

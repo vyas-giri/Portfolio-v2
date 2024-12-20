@@ -12,7 +12,7 @@ export default function Home() {
 
   return (
     <div className='snap-y snap-mandatory snap-center scroll-smooth -z-10'>
-    <section id='about_me' className='pb-[102rem] sm:pb-[70rem] md:pb-[60rem] xl:pb-32 md:mb-32 h-screen'>
+    <section id='about_me' className='pb-[102rem] sm:pb-[70rem] md:pb-[60rem] xl:pb-20 md:mb-32'>
     <div className='divide-y divide-amber-600 dark:divide-gray-700'>
       <div className='space-y-2 pt-5 pb-8 md:space-x-5'>
         <h1 className='text-3xl font-extrabold leading-9 tracking-[15px] text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-10'>
@@ -28,7 +28,7 @@ export default function Home() {
             <Hero />
           </section>
           <SocialLinks />
-          <Link href={"/resume.pdf"} target='_blank' className='rounded-l-2xl rounded-r-2xl border-2 border-amber-500 p-3 hover:border-teal-500 text-teal-500 hover:text-amber-500 px-10 lg:text-xl'>CV</Link>
+          <Link href={"/resume_vyas.pdf"} target='_blank' className='rounded-l-2xl rounded-r-2xl border-2 border-amber-500 p-3 hover:border-teal-500 text-teal-500 hover:text-amber-500 px-10 lg:text-xl'>CV</Link>
         </div>
 
         <MyInfo />
