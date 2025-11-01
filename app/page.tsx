@@ -28,7 +28,7 @@ export default function Home() {
             <Hero />
           </section>
           <SocialLinks />
-          <Link href={"/resume_vyas.pdf"} target='_blank' className='rounded-l-2xl rounded-r-2xl border-2 border-amber-500 p-3 hover:border-teal-500 text-teal-500 hover:text-amber-500 px-10 lg:text-xl'>CV</Link>
+          <Link href={"/resume_vyas_new.pdf"} target='_blank' className='rounded-l-2xl rounded-r-2xl border-2 border-amber-500 p-3 hover:border-teal-500 text-teal-500 hover:text-amber-500 px-10 lg:text-xl'>CV</Link>
         </div>
 
         <MyInfo />

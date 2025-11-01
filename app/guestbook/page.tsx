@@ -4,14 +4,19 @@ import prisma from '../db';
 
 
 async function getEntries() {
-    const data = await prisma?.guestbook.findMany({
-        take: 50,
-        orderBy: {
-            created_at: "desc",
-        },
-    });
+    try {
+        const data = await prisma?.guestbook.findMany({
+            take: 50,
+            orderBy: {
+                created_at: "desc",
+            },
+        });
 
-    return data;
+        return data || [];
+    } catch (err) {
+        console.error('Failed to fetch guestbook entries:', err);
+        return [];
+    }
 }
 
 type Props = {}
@@ -33,7 +38,12 @@ async function GuestBook({}: Props) {
             <div className='max-w-[500px] mx-auto mt-8'>
                 <Form />
 
-                <div className='flex flex-col space-y-2'>
+                <div className='flex flex-col space-y-2 mt-8'>
+                    {data.length === 0 && (
+                        <p className='text-sm text-gray-500 dark:text-gray-400 italic'>
+                            No entries yet. Be the first to leave a message!
+                        </p>
+                    )}
                     {data.map((entry) => (
                         <div key={entry.id} className='w-full text-sm break-words'>
                            <span className='dark:text-cyan-500 text-teal-600 text-lg'>{entry.username}</span>: {entry.message}
